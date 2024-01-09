@@ -7,7 +7,8 @@ const bodyParser = require('body-parser')
 require('dotenv').config()
 server.use(cors({
     credentials: true, 
-    origin: 'http://localhost:3000'
+    origin: 'https://messages-frontend.onrender.com' 
+    //'http://localhost:3000'
 }));
 server.use(express.json());
 server.use(cookieParser());
